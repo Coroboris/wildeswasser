@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <meta name="viewport">
         <title>jnggnkrlkgrl</title>
          <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +14,30 @@
   font-weight: 400;
   font-style: normal;
 }
+.haupt {
+  display: flex;
+}
+.inhalt {
+  flex: 1;
+  min-height: 15rem;
+}
+.navi {
+  
+}
 .spalte {
   display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 7px 0;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
-
-.text-links,
-.text-rechts {
-  flex: 1;
+.text-links, .text-rechts {
+  flex: 1 1 300px;
+  min-width: 250px;
 }
-
-/* Auf kleineren Bildschirmen: untereinander */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .spalte {
     flex-direction: column;
+    gap: 1rem;
   }
 }
 </style>
@@ -40,30 +47,22 @@
       <div class="text-links">
     <p class="creepster-regular">
       gkdglkjlgjlghraelkgjrglgrjkgjrgajlrkgjrl<br>
-    hfkjghojhbsjlgnbueakjhrgruiwghejfvakjrhgowrjkghnairukjghnaiurkghaniru<br>
-bhdjsfgukbjsfntkujbhnitujhbnidjkfhbndkfjhbnskjyghnaovösktlhjgbnöaoilfkhgh
+      hfkjghojhbsjlgnbueakjhrgruiwghejfvakjrhgowrjkghnairukjghnaiurkghaniru<br>
+      bhdjsfgukbjsfntkujbhnitujhbnidjkfhbndkfjhbnskjyghnaovösktlhjgbnöaoilfkhgh
 </p>
 </div>
-</div>
-<div class="spalte">
-  <div class="text-links">
+  <div class="text-rechts">
     <p class="creepster-regular">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maxime corporis amet incidunt dolorem est, obcaecati quia quidem ad dolores natus cupiditate labore adipisci unde ipsa tempore. Odio, delectus deleniti.
     </p>
-  </div>
-<div class="text-rechts">
-    <p class="creepster-regular">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maxime corporis amet incidunt dolorem est, obcaecati quia quidem ad dolores natus cupiditate labore adipisci unde ipsa tempore. Odio, delectus deleniti.    
-    </p>
-    </p>
-
     <details>
-        <p class="creepster-regular">htwhpjthoijhtiohjphjrsoihjtoihjsoijhoisltjhtoijhostilhjsotilhjslhjrolhjtroshli<br>
-            jhtijoithsjthjohijtohijsthkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkktttttttttttttttttttfkthjojhotjhojhtihjij
-        </p>
+      <p class="creepster-regular">
+        htwhpjthoijhtiohjphjrsoihjtoihjsoijhoisltjhtoijhostilhjsotilhjslhjrolhjtroshli<br>
+        jhtijoithsjthjohijtohijsthkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkktttttttttttttttttttfkthjojhotjhojhtihjij
+      </p>
     </details>
-
-    <img src="bilder/kochauf1.jpg" width="200" controls>
+    <img src="bilder/kochauf1.jpg" width="200">
+  </div>
 </div>
 <hr>
     </body>
